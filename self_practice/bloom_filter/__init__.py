@@ -57,7 +57,7 @@ class BloomFilter(object):
 		'''
 		for i in range(self.hash_count):
 			digest = mmh3.hash(item, i) % self.size
-			if self.bit_array[digest] == False:
+			if not self.bit_array[digest]:
 
 				# if any of bit is False then,its not present
 				# in filter
