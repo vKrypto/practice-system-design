@@ -42,5 +42,5 @@ class Database(Logger):
                 
     
 db = Database()
-db.write("name", "ashutopsh")
+db.write("name", "ashutosh")
 print(db.get("name"))
